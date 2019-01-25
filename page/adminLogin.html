@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>资源管理员登录</title>
+	<link rel="stylesheet" href="../css/adminLogin.css"></link>
+	<script type="text/javascript" src="../javascript/adminLogin.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="welcome">资源管理员登录</div>
+		<form id="form" name="form" method="post" action="" onsubmit="return checkALL()">
+			<div class="main">
+              		<ul>
+                       <li>账号：
+                          <input name="phone" id="phone" type="text" placeholder="电话" onBlur="nameCheck3()">
+                          <div class="error" style="display:none;" id="phone1"></div>
+                       </li>
+                       <li>密码：
+                          <input type="password" id="password" name="password" placeholder="密码" onBlur="nameCheck4()">
+                          <div class="error" style="display:none;" id="password1"></div>
+                       </li>
+                       <li>
+                       	<input type="submit" value="登&nbsp;&nbsp;录" class="button">
+                       </li>
+                       <li>
+                          <a class="forregister" href="../index.html">返回</a>
+                       </li>
+                  </ul>
+           	</div>
+		</form>
+	</div>
+</body>
+</html>
